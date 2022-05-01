@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React,{useEffect, useState} from 'react';
+import Tmdm from './tmdb'
+import Movies from './components/Movies'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () => { 
 
-export default App;
+    const [movieList, setMovielist] = useState([]);
+
+    useEffect(() =>{
+      const loadAll = async () =>{
+        let list = await Tmdm.getListFilms();
+        setMovielist(list);
+      }
+      loadAll();
+    }, []);
+
+
+    return(
+      <div className='page'>
+        <section className='lists'>
+          {movieList.map((item,key)=>(
+            <Movies key={key} title={item.title} items={item.items}/>
+          ))}
+
+        </section>
+      </div>
+
+    );
+  
+}
