@@ -1,82 +1,95 @@
-.featured{
-    height:100vh;
-    
+.featured {
+    height: 100vh;
+
 }
-.feartured-vertical{
-    width:inherit;
-    height:inherit;
-    background:linear-gradient(to top, #111 10%,transparent 90%); 
-    opacity:0.99;
-    
+
+.feartured-vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+    opacity: 0.99;
+
 }
-.feartured-horizontal{
-    width:inherit;
-    height:inherit;
-    background:linear-gradient(to right, #111 20%,transparent 80%);
-    display:flex;
+
+.feartured-horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 20%, transparent 80%);
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 30px;
     padding-bottom: 150px;
     padding-top: 70px;
 }
-.feartured-name{
+
+.feartured-name {
     font-size: 60px;
     font-weight: bold;
 }
-.feartured-info{
+
+.feartured-info {
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
 }
+
 .feartured-points,
 .feartured-year,
-.feartured-seasons{
-    display:inline-block;
+.feartured-seasons {
+    display: inline-block;
     margin-right: 15px;
 }
-.feartured-points{
-    color:#46d369;
-} 
-.feartured-description{
+
+.feartured-points {
+    color: #46d369;
+}
+
+.feartured-description {
     margin-top: 15px;
     font-size: 20px;
-    color:#999;
+    color: #999;
     max-width: 40%;
-}   
-.feartured-buttons{
+}
+
+.feartured-buttons {
     margin-top: 15px;
 }
+
 .feartured-wothbutton,
-.feartured-mylistbutton{
-    display:inline-block;
+.feartured-mylistbutton {
+    display: inline-block;
     font-size: 20px;
     font-weight: bold;
-    padding:12px 25px;
+    padding: 12px 25px;
     border-radius: 5px;
-    margin:10px;
+    margin: 10px;
     text-decoration: none;
-    opacity:1;
-    transition:all ease 0.2s;
+    opacity: 1;
+    transition: all ease 0.2s;
 }
+
 .feartured-wothbutton:hover,
-.feartured-mylistbutton:hover{
+.feartured-mylistbutton:hover {
     opacity: 0.7;
 }
 
-.feartured-wothbutton{
+.feartured-wothbutton {
     background-color: #fff;
-    color:#000;
+    color: #000;
 }
-.feartured-mylistbutton{
+
+.feartured-mylistbutton {
     background-color: #333;
-    color:#fff;
+    color: #fff;
 }
-.feartured-genres{
+
+.feartured-genres {
     margin-top: 15px;
     font-style: 18px;
-    color:#999;
+    color: #999;
 }
-.lists{
-    margin-top:-180px;
+
+.lists {
+    margin-top: -145px;
 }
