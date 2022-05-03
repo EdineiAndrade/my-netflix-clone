@@ -24,7 +24,7 @@
 }
 
 .feartured-name {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -47,13 +47,17 @@
 
 .feartured-description {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 15px;
     color: #999;
     max-width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .feartured-buttons {
     margin-top: 15px;
+    
 }
 
 .feartured-wothbutton,
