@@ -16,6 +16,9 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    padding: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
 }
 .feartured-name{
     font-size: 60px;
@@ -73,4 +76,7 @@
     margin-top: 15px;
     font-style: 18px;
     color:#999;
+}
+.lists{
+    margin-top:-180px;
 }
